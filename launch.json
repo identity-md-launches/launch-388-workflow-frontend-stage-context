@@ -1,0 +1,21 @@
+{
+  "kind": "univ4_hook",
+  "hook": {
+    "contract": "ETHOnlyFeeHook",
+    "constructorArgs": ["0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"],
+    "permissions": ["beforeSwap", "afterSwap", "beforeSwapReturnDelta", "afterSwapReturnDelta"]
+  },
+  "token": {
+    "contract": "ETHF",
+    "name": "ETH Fee",
+    "symbol": "ETHF",
+    "decimals": 18
+  },
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79299443975792720780679863727831"
+  },
+  "notes": "ETHOnlyFeeHook (src/ETHOnlyFeeHook.sol) is a Uniswap v4 hook extending v4-periphery BaseHook. Its only constructor argument is the IPoolManager; on Sepolia (chain id 11155111) that is the PoolManager 0xE03A1074c86CFeDd5C142C4F04F1a1536e203543. There is no owner, admin, fee setter, proxy, delegatecall or selfdestruct. getHookPermissions returns exactly beforeSwap, afterSwap, beforeSwapReturnDelta and afterSwapReturnDelta, so the hook address must carry the low 14-bit flags 0x00CC (204); the constructor reverts HookAddressNotValid on any other address and script/Deploy.s.sol mines the salt with HookMiner.\n\nFee: a constant 50 bps (0.5%, FEE_BPS / BPS_DENOMINATOR), always in native ETH on the ETH amount of the swap, rounded up (feeOn). Applies to any pool whose currency0 is native ETH; other pools get zero deltas. When ETH is the specified currency (exact-input buy, exact-output sell) the fee is returned from beforeSwap as a positive specified BeforeSwapDelta and afterSwap reverts PartialFill if the pool did not fill the whole adjusted amount. When ETH is unspecified (exact-output buy, exact-input sell) the fee is returned from afterSwap as a positive unspecified delta. A swap that leaves the swapper nothing after the fee reverts SwapTooSmall. afterSwap settles the fee by minting ERC-6909 claims on currency id 0 to the hook, so no ETH moves during a swap and the first buy into the factory's ETH-less pool works. donateFees(PoolKey) is permissionless: it unlocks the PoolManager, burns the pool's accrued claims and donates them to in-range LPs as currency0 only; it reverts NothingToDonate when nothing is accrued and NoLiquidity while in-range liquidity is zero. unlockCallback accepts only the PoolManager during an unlock the hook started. Events FeeTaken and FeesDonated; views accrued, totalCollected, totalDonated. hookData is ignored and unauthenticated; FeeTaken.sender is the router that called PoolManager.swap.\n\nToken: ETHF (src/ETHF.sol), OpenZeppelin ERC20 v5.4.0, name ETH Fee, symbol ETHF, 18 decimals, no constructor arguments, the whole fixed supply minted once to msg.sender in the constructor, no mint, burn, pause or owner.\n\nPool: currency0 native ETH (pairedCurrency 0x0), currency1 ETHF, static LP fee 3000 (0.3%), tickSpacing 60, hooks = ETHOnlyFeeHook. initialPrice is sqrtPriceX96 = TickMath.getSqrtPriceAtTick(138180) = 79299443975792720780679863727831, about 1,001,800 ETHF per ETH, the opening price used by the accepted launch rehearsal tests. The factory seeds one-sided ETHF liquidity below this price (tests use ticks 18180 to 138180), so the pool holds no ETH until the first buy. The hook has no initialize or liquidity callbacks and cannot block initialisation or the seed.\n\nABI exports: docs/abi/ETHOnlyFeeHook.json and docs/abi/ETHF.json. Toolchain: solc 0.8.26, evm_version cancun, optimizer 1,000,000 runs, bytecode_hash none. This manifest is a technical description of the accepted implementation; supply split, allocations, ownership, chain, gas limits and authorization come from the separately versioned launch policy and the release attestation, not from this file."
+}
