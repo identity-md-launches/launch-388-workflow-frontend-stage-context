@@ -1,0 +1,200 @@
+{
+  "date": "2026-09-27T07:22:26.434Z",
+  "target": "committed production export under /preview/",
+  "mock": true,
+  "checks": [
+    {
+      "name": "Disconnected reads and transaction gating",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Unknown-chain switch → exact add-chain payload → switch",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Invalid input focuses the labeled field and explains precision",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Native ETH quote through configured V4Quoter and ceiling fee preview",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Wallet rejection is recoverable and does not submit",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Failed simulation prevents wallet broadcast",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Buy uses PoolSwapTest, exact native value, negative input, price limit, empty hookData; no approval",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Donate simulates, submits without personal ETH, refreshes totals and displays receipt",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Sell requires a separate exact-amount router approval, then sends no ETH",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Changed tolerance invalidates an existing quote",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Quote expiry blocks signing after 45 seconds",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Wallet account change invalidates quote and connected balances",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Production export at 1440px: no horizontal overflow; axe WCAG A/AA scan clean",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Production export at 800px: no horizontal overflow; axe WCAG A/AA scan clean",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Production export at 390px: no horizontal overflow; axe WCAG A/AA scan clean",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Production export at 320px: no horizontal overflow; axe WCAG A/AA scan clean",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Keyboard field → tolerance → quote flow and visible focus screenshot",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Reduced motion removes press transitions",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "200% root font-size reflow (not browser-native zoom)",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Measured rendered text/background pairs meet 4.5:1",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Missing browser wallet explains recovery",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Zero accrued ETH cannot be donated",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "No in-range liquidity preserves claims and disables donation",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Missing contract code blocks actions; retry recovers",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "RPC outage blocks actions; retry recovers; log failure preserves lifetime totals",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Runtime ABI hash mismatch blocks app initialization",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "No uncaught browser JavaScript errors across all scenarios",
+      "status": "passed",
+      "detail": ""
+    }
+  ],
+  "browser": "154.0.8037.0",
+  "consoleErrors": [],
+  "screenshots": [
+    {
+      "path": "docs/evidence/desktop.png",
+      "width": 1440,
+      "data": "mock wallet and RPC"
+    },
+    {
+      "path": "docs/evidence/mobile-390.png",
+      "width": 390,
+      "data": "mock wallet and RPC"
+    },
+    {
+      "path": "docs/evidence/mobile-320.png",
+      "width": 320,
+      "data": "mock wallet and RPC"
+    },
+    {
+      "path": "docs/evidence/focus.png",
+      "width": 1440,
+      "data": "keyboard focus on amount field"
+    }
+  ],
+  "measurements": [
+    {
+      "selector": ".button.primary",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(189, 64, 36)",
+      "ratio": 5.35
+    },
+    {
+      "selector": ".intro-copy",
+      "foreground": "rgb(89, 98, 83)",
+      "background": "rgb(246, 245, 239)",
+      "ratio": 5.83
+    },
+    {
+      "selector": ".metric.accrued .caption",
+      "foreground": "rgb(89, 98, 83)",
+      "background": "rgb(227, 228, 216)",
+      "ratio": 4.96
+    },
+    {
+      "selector": ".amount-box .caption",
+      "foreground": "rgb(89, 98, 83)",
+      "background": "rgb(246, 245, 239)",
+      "ratio": 5.83
+    },
+    {
+      "selector": ".testnet-note",
+      "foreground": "rgb(89, 98, 83)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 6.37
+    }
+  ],
+  "resourceFailures": [],
+  "status": "passed"
+}

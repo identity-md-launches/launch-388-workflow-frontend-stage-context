@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "launchId": "618f53d9-2b8f-4306-bd52-615161bda6d5",
+  "chainId": 11155111,
+  "sourceCommit": "cf8a02ce67486ab661fb9438fa83608d0b1a540d",
+  "attestationHash": "7d5a0b6076d38e76183e8e298497a140272063946493ebe797207c8d47cc45b7",
+  "contracts": [
+    {
+      "name": "ETHF",
+      "address": "0xcb4e7bdceb4d71dd5ce9a8451761acc1105a707c",
+      "abiHash": "f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577",
+      "abiPath": "abi/ETHF.json"
+    },
+    {
+      "name": "ETHOnlyFeeHook",
+      "address": "0x64bfc6902578e9581e98fcbe51ddd13891e200cc",
+      "abiHash": "4b2c226fd31e68bc0d88d9b4fdcde60d881277a75b238fb3d1fcfbefdb2043c1",
+      "abiPath": "abi/ETHOnlyFeeHook.json"
+    }
+  ],
+  "network": {
+    "chainId": 11155111,
+    "name": "Sepolia",
+    "testnet": true,
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "explorer": "https://sepolia.etherscan.io",
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [
+      "https://cloud.google.com/application/web3/faucet/ethereum/sepolia",
+      "https://www.alchemy.com/faucets/ethereum-sepolia"
+    ],
+    "uniswapV4": {
+      "poolManager": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+      "universalRouter": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+      "quoter": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+      "stateView": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+      "positionManager": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3"
+    }
+  },
+  "walletAddChain": {
+    "chainId": "0xaa36a7",
+    "chainName": "Sepolia",
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://sepolia.etherscan.io"
+    ]
+  },
+  "pool": {
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79299443975792720780679863727831",
+    "pairedCurrency": "0x0000000000000000000000000000000000000000"
+  },
+  "token": {
+    "name": "ETH Fee",
+    "symbol": "ETHF",
+    "contract": "ETHF",
+    "decimals": 18
+  },
+  "hook": {
+    "contract": "ETHOnlyFeeHook"
+  },
+  "poolSwapTest": "0x9B6b46e2c869aa39918Db7f52f5557FE577B6eEe",
+  "protocolAbis": {
+    "PoolSwapTest": "abi/PoolSwapTest.json",
+    "StateView": "abi/StateView.json",
+    "V4Quoter": "abi/V4Quoter.json"
+  },
+  "deploymentBlock": 11791672,
+  "assets": [
+    {
+      "path": "abi/ETHF.json",
+      "sha256": "c0dab602694964041a5c7124536ce5fe6c9d1d057c2f202b73f659a1e1adb554"
+    },
+    {
+      "path": "abi/ETHOnlyFeeHook.json",
+      "sha256": "bcf4e5e014444d712bcfb0bd4486ffb9f850f96295bacb08d1e2a81a4015c7a1"
+    },
+    {
+      "path": "abi/PoolSwapTest.json",
+      "sha256": "c4a38d17ad51f5589bcb658228abbe9c008964a73fdf65241d422385e5c2caeb"
+    },
+    {
+      "path": "abi/StateView.json",
+      "sha256": "8a741e973ad017eaa69755db077cca762b055e3b45c834b7340f09caff3e6e0e"
+    },
+    {
+      "path": "abi/V4Quoter.json",
+      "sha256": "7f7fc4ea986a47c4fa51210389fe1d8799df5c506433644676d1b34e29256653"
+    },
+    {
+      "path": "assets/ccip-Kw270RoV.js",
+      "sha256": "16111161701df3f7bf5ed799d0b135d4c4f01195b9dec4563486640323b2ed3f"
+    },
+    {
+      "path": "assets/index-DtJ04wIS.js",
+      "sha256": "9e01f281b197d67841fc2febfd4cfef12204766deb162e5f4c2730cfd65c3024"
+    },
+    {
+      "path": "assets/index-Ne0RVvZ1.css",
+      "sha256": "6a82da0e34503d08f0678501135c0189e1a49c989d371647b9451b162da27bea"
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "b0967e4ed4e0750d0d71ecc5b544d6e7d22cd1e2be904454660132ff95d089d6"
+    },
+    {
+      "path": "index.html",
+      "sha256": "0eee74ca61986c39d111530609139640dcd85e075bb485a7ff26cd7c1b6580b6"
+    }
+  ]
+}

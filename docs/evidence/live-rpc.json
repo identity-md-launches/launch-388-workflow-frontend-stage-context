@@ -1,0 +1,151 @@
+{
+  "checkedAt": "2026-09-27T07:19:40.037Z",
+  "operation": "Read-only chain ID and contract bytecode; no transactions",
+  "endpoints": [
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "chainId": 11155111,
+      "contracts": [
+        {
+          "name": "ETHF",
+          "address": "0xcb4e7bdceb4d71dd5ce9a8451761acc1105a707c",
+          "nonemptyCode": true
+        },
+        {
+          "name": "ETHOnlyFeeHook",
+          "address": "0x64bfc6902578e9581e98fcbe51ddd13891e200cc",
+          "nonemptyCode": true
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9B6b46e2c869aa39918Db7f52f5557FE577B6eEe",
+          "nonemptyCode": true
+        },
+        {
+          "name": "poolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "nonemptyCode": true
+        },
+        {
+          "name": "quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "nonemptyCode": true
+        },
+        {
+          "name": "stateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "nonemptyCode": true
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "url": "https://rpc.sepolia.ethpandaops.io",
+      "chainId": 11155111,
+      "contracts": [
+        {
+          "name": "ETHF",
+          "address": "0xcb4e7bdceb4d71dd5ce9a8451761acc1105a707c",
+          "nonemptyCode": true
+        },
+        {
+          "name": "ETHOnlyFeeHook",
+          "address": "0x64bfc6902578e9581e98fcbe51ddd13891e200cc",
+          "nonemptyCode": true
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9B6b46e2c869aa39918Db7f52f5557FE577B6eEe",
+          "nonemptyCode": true
+        },
+        {
+          "name": "poolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "nonemptyCode": true
+        },
+        {
+          "name": "quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "nonemptyCode": true
+        },
+        {
+          "name": "stateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "nonemptyCode": true
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "url": "https://sepolia.rpc.sentio.xyz",
+      "chainId": 11155111,
+      "contracts": [
+        {
+          "name": "ETHF",
+          "address": "0xcb4e7bdceb4d71dd5ce9a8451761acc1105a707c",
+          "nonemptyCode": true
+        },
+        {
+          "name": "ETHOnlyFeeHook",
+          "address": "0x64bfc6902578e9581e98fcbe51ddd13891e200cc",
+          "nonemptyCode": true
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9B6b46e2c869aa39918Db7f52f5557FE577B6eEe",
+          "nonemptyCode": true
+        },
+        {
+          "name": "poolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "nonemptyCode": true
+        },
+        {
+          "name": "quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "nonemptyCode": true
+        },
+        {
+          "name": "stateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "nonemptyCode": true
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "pool": {
+    "poolId": "0xcdde4a6ef96ce8113aa0bec8fff7394f8b2924eb16df599d0453f3af6edd7438",
+    "accrued": "0",
+    "totalCollected": "0",
+    "totalDonated": "0",
+    "slot0": [
+      "560227709747861399187319382274582",
+      177284,
+      0,
+      3000
+    ],
+    "liquidity": "0",
+    "hookManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+    "routerManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+    "decimals": 18,
+    "feeBps": "50",
+    "quotes": [
+      {
+        "direction": "buy",
+        "amount": "100000000000000",
+        "result": [
+          "4938170826239599674012",
+          "172023"
+        ],
+        "status": "passed"
+      },
+      {
+        "direction": "sell",
+        "amount": "1000000000000000000",
+        "status": "unverified",
+        "error": "The contract function \"quoteExactInputSingle\" reverted with the following signature:\n0x6190b2b0"
+      }
+    ]
+  }
+}

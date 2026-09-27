@@ -1,0 +1,93 @@
+[
+  {
+    "name": "swap",
+    "type": "function",
+    "stateMutability": "payable",
+    "inputs": [
+      {
+        "type": "tuple",
+        "name": "key",
+        "components": [
+          {
+            "type": "address",
+            "name": "currency0"
+          },
+          {
+            "type": "address",
+            "name": "currency1"
+          },
+          {
+            "type": "uint24",
+            "name": "fee"
+          },
+          {
+            "type": "int24",
+            "name": "tickSpacing"
+          },
+          {
+            "type": "address",
+            "name": "hooks"
+          }
+        ]
+      },
+      {
+        "type": "tuple",
+        "name": "params",
+        "components": [
+          {
+            "type": "bool",
+            "name": "zeroForOne"
+          },
+          {
+            "type": "int256",
+            "name": "amountSpecified"
+          },
+          {
+            "type": "uint160",
+            "name": "sqrtPriceLimitX96"
+          }
+        ]
+      },
+      {
+        "type": "tuple",
+        "name": "testSettings",
+        "components": [
+          {
+            "type": "bool",
+            "name": "takeClaims"
+          },
+          {
+            "type": "bool",
+            "name": "settleUsingBurn"
+          }
+        ]
+      },
+      {
+        "type": "bytes",
+        "name": "hookData"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "int256",
+        "name": "delta"
+      }
+    ]
+  },
+  {
+    "name": "manager",
+    "type": "function",
+    "stateMutability": "view",
+    "inputs": [],
+    "outputs": [
+      {
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "name": "NoSwapOccurred",
+    "type": "error",
+    "inputs": []
+  }
+]

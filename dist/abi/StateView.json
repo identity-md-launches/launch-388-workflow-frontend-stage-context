@@ -1,0 +1,48 @@
+[
+  {
+    "name": "getSlot0",
+    "type": "function",
+    "stateMutability": "view",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "poolId"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "uint160",
+        "name": "sqrtPriceX96"
+      },
+      {
+        "type": "int24",
+        "name": "tick"
+      },
+      {
+        "type": "uint24",
+        "name": "protocolFee"
+      },
+      {
+        "type": "uint24",
+        "name": "lpFee"
+      }
+    ]
+  },
+  {
+    "name": "getLiquidity",
+    "type": "function",
+    "stateMutability": "view",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "poolId"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "uint128",
+        "name": "liquidity"
+      }
+    ]
+  }
+]

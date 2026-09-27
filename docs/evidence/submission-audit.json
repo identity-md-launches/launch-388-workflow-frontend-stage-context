@@ -1,0 +1,18 @@
+{
+  "allowedPathsOnly": true,
+  "existingTrackedFilesUnchanged": true,
+  "symlinks": 0,
+  "dependencyOrCacheFilesInCandidate": 0,
+  "sourceAndExportCandidateFiles": 195,
+  "candidateFileBytesBeforeThisRecord": 3327024,
+  "existingGitObjectBytes": 262731,
+  "gitMetadataAllowanceBytes": 262144,
+  "conservativeSubmissionSizeBoundBytes": 3851899,
+  "limitBytes": 8388608,
+  "exportBytesIncludingManifest": 536511,
+  "exportAssetsExcludingManifest": 10,
+  "allAssetHashesMatch": true,
+  "commitCreated": false,
+  "commitBlocker": "Workspace .git mount is read-only; git add cannot create index.lock.",
+  "scopeNote": "This record itself is below 2 KiB and fits within the conservative allowance. No Git bundle was generated because staging is unavailable."
+}
